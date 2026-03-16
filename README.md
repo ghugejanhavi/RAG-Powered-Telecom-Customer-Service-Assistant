@@ -64,7 +64,7 @@ Customer knowledge base/
    - `CO_API_KEY` (Cohere)
 3. Open `RAG_Powered_Telecom_Customer_Service_Assistant.ipynb` in Google Colab
 4. Run all cells in order
-5. The Gradio interface will launch at the end — ask it anything about the telecom knowledge base
+5. The Gradio interface will launch at the end; ask it anything about the telecom knowledge base
 
 ---
 
@@ -85,4 +85,3 @@ Six test prompts were run against the final pipeline (Version 2d), ranging from 
 ## Author
 
 **Janhavi Ghuge**  
-Course: BNAN 570 — Generative AI  
