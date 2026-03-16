@@ -62,7 +62,7 @@ Customer knowledge base/
 2. Add your API keys to Colab Secrets:
    - `OPENAI_API_KEY`
    - `CO_API_KEY` (Cohere)
-3. Open `rag_Janhavi_Ghuge.ipynb` in Google Colab
+3. Open `RAG_Powered_Telecom_Customer_Service_Assistant.ipynb` in Google Colab
 4. Run all cells in order
 5. The Gradio interface will launch at the end — ask it anything about the telecom knowledge base
 
@@ -76,9 +76,9 @@ Six test prompts were run against the final pipeline (Version 2d), ranging from 
 - System limitations and failure cases
 
 **Key findings:**
-- Medium prompts (single-folder questions) performed excellently
-- Parent-child chunking made a measurable difference on multi-part business SLA questions
-- Metadata filter occasionally misclassified cancellation/billing queries by missing the `policies` folder
+- The system performed excellently on medium-difficulty prompts where the question mapped cleanly to one folder. For example, comparing all postpaid mobile plans returned accurate prices, features, and recommendations pulled directly from the knowledge base.
+- Parent-child chunking made a real difference on complex multi-part questions. By searching small 400-character chunks but passing 2000-character parent chunks to the LLM, the system could answer all four sub-questions in the Business Premium SLA prompt without losing context between them.
+- The one consistent weak spot was metadata filtering for cancellation and billing queries. The LLM classifier sometimes only detected `procedures` and missed `policies`, which is where refund rules and early termination fees actually live, causing the system to fall back on generic estimates instead of real policy numbers.
 
 ---
 
