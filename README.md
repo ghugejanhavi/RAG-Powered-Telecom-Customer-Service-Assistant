@@ -1,12 +1,12 @@
 # RAG-Powered Telecom Customer Service Assistant
 
-An AI-powered customer service assistant built with Retrieval-Augmented Generation (RAG) that answers complex, policy-specific questions by grounding every response in a 22-document internal knowledge base — eliminating hallucinations and keeping answers consistent across agents.
+An AI-powered customer service assistant built with Retrieval-Augmented Generation (RAG) that answers complex, policy-specific questions by grounding every response in a 22-document internal knowledge base, eliminating hallucinations and keeping answers consistent across agents.
 
 ---
 
 ## What This Project Does
 
-Standard LLMs cannot answer company-specific questions accurately — they have no knowledge of internal pricing, SLA terms, or cancellation policies, and they hallucinate when asked. This project solves that by building a RAG pipeline that retrieves the right documents first, then generates a grounded answer.
+Standard LLMs cannot accurately answer company-specific questions, as they lack knowledge of internal pricing, SLA terms, and cancellation policies, and they often hallucinate when asked. This project addresses this issue by building a RAG pipeline that retrieves the relevant documents first, then generates a grounded answer.
 
 The assistant is built for a telecom company's customer service team and can handle questions like:
 - *"A customer on Fiber 250 is getting 150 Mbps — is this an SLA violation?"*
